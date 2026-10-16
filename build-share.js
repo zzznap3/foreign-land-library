@@ -10,7 +10,7 @@ const fs = require("fs");
 const path = require("path");
 
 // ▼ 公開URL（末尾のスラッシュまで）に書き換える
-const SITE_URL = "https://ユーザー名.github.io/リポジトリ名/";
+const SITE_URL = "https://zzznap3.github.io/foreign-land-library/";
 
 eval(fs.readFileSync(path.join(__dirname, "data.js"), "utf8") + ";globalThis.PRODUCTS=PRODUCTS;");
 
