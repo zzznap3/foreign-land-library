@@ -54,7 +54,7 @@ const PRODUCTS = {
     url: `${SHOP}/products/i4-2026-10-14-20-39-44`,
     image: img("IMG_8791.png?v=1792100036"),
     kind: "140字・300字小説カード 10枚セット（星×長尾たぐい）",
-    text: "星の140字小説と長尾たぐいの300字小説を名刺サイズのカードセットにしました。作品はすべて書き下ろし。テーマは「願望」。二人がそれぞれどのような「願望」を元に作品を作ったのかは手に入れてみてのお楽しみ。",
+    text: "140字小説や掌編小説コンテストなどで活躍中の書き手、星（X: @hosi_hitotubu）の140字小説と長尾たぐいの300字小説を名刺サイズのカードセットにしました。作品はすべて書き下ろし。テーマは「願望」。二人がそれぞれどのような「願望」を元に作品を作ったのかは手に入れてみてのお楽しみ。",
   },
   utsusemi: {
     name: "300字小説クリアファイル【うつせ・み】",
@@ -62,7 +62,7 @@ const PRODUCTS = {
     url: `${SHOP}/products/i4-2026-10-14-19-40-24`,
     image: img("AsuAif5edj605vDFQk87wqb4AgMGe7nwzBkKwPD2.png?v=1791974635"),
     kind: "A4クリアファイル（イラスト：こな・つむり）",
-    text: "長尾たぐいの300字小説に寄せてプロのPOP職人、こな・つむりが書き下ろしたイラストを使用したA4クリアファイル。紙を入れると読み味が違う仕様になっております。夏を偲ぶのにいかが？",
+    text: "長尾たぐいの300字小説に寄せてプロのPOP職人、こな・つむり（X: @CONATHUMURIBOOK）が書き下ろしたイラストを使用したA4クリアファイル。紙を入れると読み味が違う仕様になっております。夏を偲ぶのにいかが？",
   },
   postcard: {
     name: "140字・300字小説ポストカードセット【海月の骨／入眠珈琲】",
@@ -70,7 +70,7 @@ const PRODUCTS = {
     url: `${SHOP}/products/i4-2026-10-14-19-18-28`,
     image: img("HSv4aUdqAyqJyIyN02jI1xGGFs11IuvT6s8QdLPV.jpg?v=1791973239"),
     kind: "小説ポストカード 2枚セット",
-    text: "星の書き下ろし140字小説、そして長尾たぐいの300字小説に寄せてこな・つむりが書き下ろしたイラストを使用した小説ポストカードのセット。どちらも眠り・夢が関わる作品です。枕元にいかが？",
+    text: "星の書き下ろし140字小説、そして長尾たぐいの300字小説に寄せてこな・つむり（X: @CONATHUMURIBOOK）が書き下ろしたイラストを使用した小説ポストカードのセット。どちらも眠り・夢が関わる作品です。枕元にいかが？",
   },
   tenshi: {
     name: "紙の展開図から天使をつくる",
@@ -118,32 +118,32 @@ const PRODUCTS = {
     url: `${SHOP}/products/i4-2026-07-24-17-15-04`,
     image: img("EsQNkBWf8pY6Zz4O3vZoQaXZfBJ0lmIsioQ7nqmO.jpg?v=1784881080"),
     kind: "300字小説チャーム（のどか・ランダム）",
-    text: "名刺サイズのカードに300字小説をおさめた〈ひとひら〉シリーズのチャーム。タイトルは「のどか」。",
+    text: "名刺サイズのカードに300字小説をおさめた〈ひとひら〉シリーズのチャーム。声しか知らない猫について。",
   },
 };
 
 const QUESTIONS = [
   {
-    q: "物語を、どんなかたちで手元に置きたい？",
+    q: "物語をどんなかたちで手元に置きたい？",
     options: [
-      { label: "鞄やペンケースにぶらさげて", scores: { iruka: 3, mane: 3, tsubaki: 3, neko: 3 } },
-      { label: "小さなカードを一枚ずつめくって", scores: { ikimono: 3, fushigi: 3, nichijo: 3, hoshikakera: 3, hikaruhoshi: 3 } },
+      { label: "鞄やペンケースにぶらさげていつも一緒に", scores: { iruka: 3, mane: 3, tsubaki: 3, neko: 3 } },
+      { label: "小さなカードを一枚ずつ生活の中で", scores: { ikimono: 3, fushigi: 3, nichijo: 3, hoshikakera: 3, hikaruhoshi: 3 } },
       { label: "部屋に飾ったり、本棚に並べたり", scores: { tenshi: 3, nagoya: 3, scroll: 3, utsusemi: 3, postcard: 3 } },
     ],
   },
   {
-    q: "読みたくなるのは、どんなとき？",
+    q: "読みたくなるのはどんなとき？",
     options: [
       { label: "通勤・通学の行き帰り", scores: { tsubaki: 3, nagoya: 2, nichijo: 2, mane: 1 } },
-      { label: "眠る前の、ひとりの時間", scores: { postcard: 3, hikaruhoshi: 2, hoshikakera: 1, tenshi: 1 } },
+      { label: "眠る前のひとりの時間", scores: { postcard: 3, hikaruhoshi: 2, hoshikakera: 1, tenshi: 1 } },
       { label: "休憩やおでかけのお供に", scores: { scroll: 2, iruka: 1, fushigi: 1, neko: 1, ikimono: 1, utsusemi: 1 } },
     ],
   },
   {
     q: "気になるモチーフは？",
     options: [
-      { label: "犬や猫、海の生きもの", scores: { ikimono: 3, neko: 3, iruka: 3 } },
-      { label: "星と夜と、夢", scores: { hoshikakera: 3, hikaruhoshi: 3, postcard: 3 } },
+      { label: "犬や猫にとどまらないいろいろな生きもの", scores: { ikimono: 3, neko: 3, iruka: 3 } },
+      { label: "小さな星と静かな夜、穏やかな夢", scores: { hoshikakera: 3, hikaruhoshi: 3, postcard: 3 } },
       { label: "妖精や天使、人ならざるもの", scores: { scroll: 3, tenshi: 3, fushigi: 2 } },
     ],
   },
@@ -156,11 +156,11 @@ const QUESTIONS = [
     ],
   },
   {
-    q: "いまの気分にいちばん近いのは？",
+    q: "今の気分にいちばん近いのは？",
     options: [
-      { label: "空元気でなんとかやっている", scores: { hoshikakera: 3, tsubaki: 2 } },
-      { label: "不安を、何か素敵なものに変えたい", scores: { nichijo: 3, neko: 1, mane: 1 } },
-      { label: "過ぎた季節や、見慣れた景色を思い出したい", scores: { utsusemi: 3, nagoya: 2, iruka: 1, hikaruhoshi: 1 } },
+      { label: "元気そうに見えるけれどけっこうギリギリ", scores: { hoshikakera: 3, tsubaki: 2 } },
+      { label: "漠然とした不安があるので何か素敵なものに触れたい", scores: { nichijo: 3, neko: 1, mane: 1 } },
+      { label: "過ぎた季節や見慣れた景色に思いを馳せたい", scores: { utsusemi: 3, nagoya: 2, iruka: 1, hikaruhoshi: 1 } },
     ],
   },
 ];
