@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>ひとひら診断｜異境文庫</title>
+  <meta name="description" content="5つの質問に答えると、異境文庫の文芸雑貨からあなたにひとつ、おすすめをお届けします。">
+  <meta property="og:title" content="ひとひら診断｜異境文庫">
+  <meta property="og:description" content="5つの質問に答えると、異境文庫の文芸雑貨からあなたにひとつ、おすすめをお届けします。">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho+B1:wght@500;700&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="app" aria-live="polite">
+    <!-- はじまり -->
+    <section id="intro" class="screen">
+      <div class="card card--title">
+        <h1 class="vertical">ひとひら診断</h1>
+        <p class="vertical card__sub">異境文庫</p>
+      </div>
+      <p class="lead">あなたの世界から少し離れてすぐそこに。<br>5つの質問に答えると、異境文庫の文芸雑貨からあなたにひとつ、おすすめをお届けします。</p>
+      <button class="btn btn--primary" id="start">診断をはじめる</button>
+    </section>
+
+    <!-- 質問 -->
+    <section id="quiz" class="screen" hidden>
+      <p class="progress" id="progress"></p>
+      <div class="stack" id="stack">
+        <div class="card card--q" id="qcard">
+          <h2 class="vertical" id="qtext"></h2>
+        </div>
+      </div>
+      <div class="options" id="options" role="group" aria-labelledby="qtext"></div>
+      <button class="btn btn--text" id="back">ひとつ前の質問にもどる</button>
+    </section>
+
+    <!-- 結果 -->
+    <section id="result" class="screen" hidden>
+      <p class="result__label">あなたへのひとひら</p>
+      <article class="pick">
+        <a class="pick__img" id="rimg-link" target="_blank" rel="noopener">
+          <img id="rimg" alt="" width="640" height="640">
+        </a>
+        <div class="pick__body">
+          <h2 id="rname"></h2>
+          <p class="pick__kind" id="rkind"></p>
+          <p class="pick__text" id="rtext"></p>
+          <p class="pick__price" id="rprice"></p>
+          <a class="btn btn--primary" id="rlink" target="_blank" rel="noopener">蔵六湖畔のショップで見る</a>
+        </div>
+      </article>
+
+      <h3 class="also__title">こちらもおすすめ</h3>
+      <ul class="also" id="also"></ul>
+
+      <div class="result__actions">
+        <a class="btn" id="share" target="_blank" rel="noopener">結果をXでシェア</a>
+        <button class="btn" id="retry">もう一度診断する</button>
+      </div>
+      <p class="foot"><a href="https://zourokukohan.com/collections/%E7%95%B0%E5%A2%83%E6%96%87%E5%BA%AB-i4" target="_blank" rel="noopener">異境文庫の商品をすべて見る</a></p>
+    </section>
+  </main>
+
+  <script src="data.js"></script>
+  <script src="score.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
