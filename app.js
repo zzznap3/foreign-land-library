@@ -9,6 +9,24 @@
     window.scrollTo({ top: 0 });
   }
 
+// 文中の @ユーザー名 を X のプロフィールへのリンクにする
+function renderWithXLinks(el, text) {
+  el.replaceChildren();
+  const re = /@([A-Za-z0-9_]{1,15})/g;
+  let last = 0, m;
+  while ((m = re.exec(text))) {
+    el.append(text.slice(last, m.index));
+    const a = document.createElement("a");
+    a.href = `https://x.com/${m[1]}`;
+    a.textContent = m[0];
+    a.target = "_blank";
+    a.rel = "noopener";
+    el.append(a);
+    last = m.index + m[0].length;
+  }
+  el.append(text.slice(last));
+}
+
   function renderQuestion() {
     const i = answers.length;
     const q = QUESTIONS[i];
@@ -64,7 +82,7 @@
     $("rimg-link").href = top.url;
     $("rname").textContent = top.name;
     $("rkind").textContent = top.kind;
-    $("rtext").textContent = top.text;
+    renderWithXLinks($("rtext"), top.text);
     $("rprice").textContent = `¥${top.price.toLocaleString()}（税込）`;
     $("rlink").href = top.url;
 
