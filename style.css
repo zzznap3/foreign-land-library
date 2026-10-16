@@ -43,8 +43,8 @@ body {
 .card--title { max-width: 12.5rem; aspect-ratio: 55 / 91; padding: 2rem 1.6rem; justify-content: space-between; }
 .card--title h1 { font-size: 2.1rem; letter-spacing: .2em; }
 .card__sub { font-family: var(--mincho); color: var(--muted); font-size: .95rem; letter-spacing: .4em; align-self: flex-end; }
-.card--q { flex-direction: row; align-items: center; justify-content: flex-start; }
-.card--q h2 { font-size: 1.15rem; letter-spacing: .04em; line-height: 1.6; }
+.card.card--q { flex-direction: row; align-items: center; justify-content: flex-start; }
+.card--q h2 { font-size: 1.15rem; letter-spacing: .04em; line-height: 1.6; width: 100%; text-align: left; }
 
 .lead { margin: 0; text-align: center; color: var(--muted); max-width: 30em; }
 
