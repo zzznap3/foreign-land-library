@@ -109,6 +109,8 @@ body {
 .foot { margin: 0; font-size: .9rem; }
 .foot a { color: var(--muted); text-underline-offset: .25em; }
 
+.pick__text a { color: var(--accent); text-underline-offset: .2em; }
+
 @media (max-width: 380px) {
   .card { padding: 1.1rem 1.2rem; }
   .card--q h2 { font-size: 1.02rem; }
