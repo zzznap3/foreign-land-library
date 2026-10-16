@@ -98,7 +98,8 @@ function renderWithXLinks(el, text) {
       also.appendChild(li);
     });
 
-    const pageUrl = location.href.split("?")[0].split("#")[0];
+    const base = location.href.split("?")[0].split("#")[0].replace(/index\.html$/, "");
+    const pageUrl = `${base}r/${ranked[0].id}.html`;
     const text = `ひとひら診断の結果、わたしへのおすすめは「${top.name}」でした。`;
     $("share").href = `https://twitter.com/intent/tweet?text=${encodeURIComponent(text)}&url=${encodeURIComponent(pageUrl)}&hashtags=${encodeURIComponent("異境文庫")}`;
 
