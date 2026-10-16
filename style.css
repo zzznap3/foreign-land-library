@@ -48,6 +48,10 @@ body {
 
 .lead { margin: 0; text-align: center; color: var(--muted); max-width: 30em; }
 
+/* 著者名 */
+.author { margin: -1rem 0 0; font-size: .9rem; color: var(--muted); text-align: center; }
+.author a { color: var(--accent); text-underline-offset: .2em; }
+
 /* 残りの質問がカードの束として見える */
 .stack { position: relative; width: 100%; max-width: 22rem; }
 .stack::before, .stack::after {
