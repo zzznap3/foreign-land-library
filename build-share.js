@@ -9,8 +9,10 @@
 const fs = require("fs");
 const path = require("path");
 
-// ▼ 公開URL（末尾のスラッシュまで）に書き換える
-const SITE_URL = "https://zzznap3.github.io/foreign-land-library/";
+// 公開URL（末尾のスラッシュまで）。
+// GitHub Actions で実行するときは自動で渡されるので書き換え不要。
+// 手元で実行するときだけ、下の文字列を実際のURLに書き換える。
+const SITE_URL = (process.env.SITE_URL || "https://ユーザー名.github.io/リポジトリ名/").replace(/\/?$/, "/");
 
 eval(fs.readFileSync(path.join(__dirname, "data.js"), "utf8") + ";globalThis.PRODUCTS=PRODUCTS;");
 
